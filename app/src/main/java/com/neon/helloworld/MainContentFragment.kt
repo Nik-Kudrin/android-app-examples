@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import kotlin.random.Random
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -20,6 +23,8 @@ class MainContentFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        view.findViewById<Button>(R.id.roll_dice_button).setOnClickListener {
+            view.findViewById<TextView>(R.id.dice_roll_result).text = Random.nextInt(1, 6).toString()
+        }
     }
 }
