@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:orientation="vertical"
-    tools:context=".MainContentFragment">
+    tools:context="com.neon.simple.MainContentFragment">
 
     <ImageView
         android:id="@+id/dice_image"
@@ -14,7 +14,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="100sp"
         android:layout_marginBottom="30sp"
-        android:src="@drawable/dice_1" />
+        android:src="@drawable/dice_start"
+        tools:src="@drawable/dice_start" />
 
     <TextView
         android:id="@+id/dice_roll_result"

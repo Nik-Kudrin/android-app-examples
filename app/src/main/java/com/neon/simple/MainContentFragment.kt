@@ -1,4 +1,4 @@
-package com.neon.helloworld
+package com.neon.simple
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +14,8 @@ import kotlin.random.Random
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class MainContentFragment : Fragment() {
+    lateinit var diceImageView: ImageView
+    lateinit var diceTextView: TextView
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -26,10 +28,13 @@ class MainContentFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        diceTextView = view.findViewById<TextView>(R.id.dice_roll_result)
+        diceImageView = view.findViewById<ImageView>(R.id.dice_image)
+
         view.findViewById<Button>(R.id.roll_dice_button).setOnClickListener {
             val randomNumber = Random.nextInt(1, 7)
-            view.findViewById<TextView>(R.id.dice_roll_result).text = randomNumber.toString()
-            view.findViewById<ImageView>(R.id.dice_image).setImageResource(convertNumberToDiceResource(randomNumber))
+            diceTextView.text = randomNumber.toString()
+            diceImageView.setImageResource(convertNumberToDiceResource(randomNumber))
         }
     }
 

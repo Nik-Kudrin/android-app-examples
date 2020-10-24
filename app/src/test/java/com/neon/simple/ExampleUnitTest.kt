@@ -1,4 +1,4 @@
-package com.neon.helloworld
+package com.neon.simple
 
 import org.junit.Test
 
