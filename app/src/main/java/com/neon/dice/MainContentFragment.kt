@@ -1,4 +1,4 @@
-package com.neon.simple
+package com.neon.dice
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

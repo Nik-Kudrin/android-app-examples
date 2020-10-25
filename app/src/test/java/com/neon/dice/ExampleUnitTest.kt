@@ -1,4 +1,4 @@
-package com.neon.simple
+package com.neon.dice
 
 import org.junit.Test
 
