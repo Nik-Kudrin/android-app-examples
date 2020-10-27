@@ -23,7 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/dice_roll_result"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textColor="@color/teal_200"
+        />
 
     <Button
         android:id="@+id/roll_dice_button"
