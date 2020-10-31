@@ -6,4 +6,5 @@
     <string name="roll_dice">Roll Dice</string>
 
     <string name="dice_roll_result">--</string>
+    <string name="custom_edit_text_field">You\'re lucky one</string>
 </resources>
